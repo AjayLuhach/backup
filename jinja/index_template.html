@@ -1,0 +1,19 @@
+<!-- index_template.html -->
+
+<!-- include base.html -->
+{% extends "base.html" %}
+
+<!-- Write any code only in this block -->
+{% block content %}
+
+Hello {{pl_name}}! Your email is: {{pl_email}}
+<br>
+Even numbers:
+{% for i in numbers %}
+	{% if i%2==0 %}
+		{{i}}
+	{% endif %}
+{% endfor %}
+	
+<!-- end the block -->
+{% endblock %}
